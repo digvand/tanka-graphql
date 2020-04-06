@@ -1,0 +1,5 @@
+[!includexref:BenchmarkDotNet.Artifacts/results/Tanka.GraphQL.Benchmarks.Benchmarks-report-github.adoc[Benchmarks]]
+
+____
+DISCLAIMER Benchmarks are run as part of the build and as such are not comparable
+____

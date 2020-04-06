@@ -1,0 +1,18 @@
+== Creating a schema
+
+Schema defines the structure against which your queries are executed.
+
+____
+See also
+
+* https://graphql.github.io/graphql-spec/June2018/#sec-Schema[Specification]
+* link:7-type-system/02-schema.html[Schema]
+____
+
+Schema creation includes following steps:
+
+. Create instance of `SchemaBuilder`
+. Create query root type
+. Build schema
+
+[{Tanka.GraphQL.Tutorials.GettingStarted.GettingStarted.Part1_CreateSchema}]

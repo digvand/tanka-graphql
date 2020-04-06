@@ -1,0 +1,25 @@
+== Apply directives
+
+Directives are annotations for your GraphQL schema or operations.
+
+____
+See also
+
+* https://graphql.github.io/graphql-spec/June2018/#sec-Type-System.Directives[Specification]
+* link:7-type-system/13-directives.html[Directives]
+____
+
+Tanka GraphQL provides support for execution and schema directives:
+
+* Execution directives: Include and Skip
+* Schema directives
+
+____
+Currrently schema directives are only supported on fields of object types
+____
+
+=== Schema directives
+
+Schema directives can be used to modify field for example by modifying the resolver of the field.
+
+[{Tanka.GraphQL.Tutorials.GettingStarted.GettingStarted.Part3_ApplyDirectives_on_Object_fields}]

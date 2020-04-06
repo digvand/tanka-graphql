@@ -1,0 +1,19 @@
+== Input Objects
+
+____
+https://facebook.github.io/graphql/June2018/#sec-Input-Objects[Specification]
+____
+
+Input objects are created as instances of `InputObjectType`.
+
+=== Creating input object
+
+[{Tanka.GraphQL.Tests.TypeSystem.InputObjectTypeFacts.Define}]
+
+____
+When using List or NonNull wrappers make sure that the wrapped type passes `TypeIs.IsInputType`.
+____
+
+=== Input Coercion
+
+[{Tanka.GraphQL.Tests.TypeSystem.InputObjectTypeFacts.Input_coercion}]
