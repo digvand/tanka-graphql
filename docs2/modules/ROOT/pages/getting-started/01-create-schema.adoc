@@ -1,4 +1,4 @@
-== Creating a schema
+= Creating a schema
 
 Schema defines the structure against which your queries are executed.
 
@@ -15,4 +15,4 @@ Schema creation includes following steps:
 . Create query root type
 . Build schema
 
-[{Tanka.GraphQL.Tutorials.GettingStarted.GettingStarted.Part1_CreateSchema}]
+roslyn::Tanka.GraphQL.Tutorials.GettingStarted.GettingStarted.Part1_CreateSchema

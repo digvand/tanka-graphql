@@ -1,0 +1,17 @@
+site:
+  title: Tanka GraphQL
+  # the 404 page and sitemap files only get generated when the url property is set
+  url: https://pekkah.github.com/tanka-graphql
+  start_page: tanka-graphql::index.adoc
+content:
+  sources:
+  - url: .
+    branches: HEAD
+    start_path: docs2
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: docs2/ui
+output:
+  dir: ./gh-pages

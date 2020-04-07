@@ -1,0 +1,2 @@
+* xref:benchmarks.adoc[Benchmarks]
+* xref:getting-started/01-create-schema.adoc[Create schema]
