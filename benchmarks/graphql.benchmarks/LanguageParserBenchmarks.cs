@@ -13,7 +13,7 @@ namespace Tanka.GraphQL.Benchmarks
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     [RankColumn]
     [MemoryDiagnoser]
-    [MarkdownExporterAttribute.GitHub]
+    [AsciiDocExporter]
     public class LanguageParserBenchmarks
     {
         public Memory<byte> IntrospectionQueryMemory;

@@ -9,7 +9,7 @@ namespace Tanka.GraphQL.Benchmarks.RealWorldSchemas
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     [RankColumn]
     [MemoryDiagnoser]
-    [MarkdownExporterAttribute.GitHub]
+    [AsciiDocExporter]
     public class ParseGitHubSchemaBenchmark
     {
         public byte[] GitHubBytes { get; private set; }

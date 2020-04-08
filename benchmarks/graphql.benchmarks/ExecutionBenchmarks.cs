@@ -10,9 +10,10 @@ using Tanka.GraphQL.TypeSystem;
 
 namespace Tanka.GraphQL.Benchmarks
 {
+    [ArtifactsPath("docs2/modules/benchmarks/pages")]
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     [MemoryDiagnoser]
-    [MarkdownExporterAttribute.GitHub]
+    [AsciiDocExporter]
     public class ExecutionBenchmarks
     {
         private ExecutableDocument _mutation;

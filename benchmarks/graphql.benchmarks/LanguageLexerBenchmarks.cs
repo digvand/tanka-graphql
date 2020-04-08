@@ -10,7 +10,7 @@ namespace Tanka.GraphQL.Benchmarks
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     [RankColumn]
     [MemoryDiagnoser]
-    [MarkdownExporterAttribute.GitHub]
+    [AsciiDocExporter]
     public class LanguageLexerBenchmarks
     {
         public string SimpleQuery { get; set; }

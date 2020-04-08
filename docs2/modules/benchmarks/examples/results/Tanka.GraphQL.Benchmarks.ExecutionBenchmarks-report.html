@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Tanka.GraphQL.Benchmarks.ExecutionBenchmarks-20200407-172708</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.12.0, OS=Windows 10.0.19041
+Intel Core i7-8650U CPU 1.90GHz (Kaby Lake R), 1 CPU, 8 logical and 4 physical cores
+.NET Core SDK=3.1.300-preview-015048
+  [Host] : .NET Core 3.1.3 (CoreCLR 4.700.20.11803, CoreFX 4.700.20.12001), X64 RyuJIT
+</code></pre>
+<pre><code>Toolchain=InProcessEmitToolchain  
+</code></pre>
+
+<table>
+<thead><tr><th>                         Method</th><th>ExecutionCount</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th>Ratio</th><th>RatioSD</th><th>Gen 0</th><th>Gen 1</th><th>Gen 2</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>Mutation_without_validation</td><td>1</td><td>4.836 us</td><td>0.1774 us</td><td>0.5119 us</td><td>4.669 us</td><td>0.93</td><td>0.12</td><td>0.8240</td><td>-</td><td>-</td><td>3.37 KB</td>
+</tr><tr><td>Query_without_validation</td><td>1</td><td>5.206 us</td><td>0.1385 us</td><td>0.4018 us</td><td>4.994 us</td><td>1.00</td><td>0.00</td><td>0.9308</td><td>-</td><td>-</td><td>3.83 KB</td>
+</tr><tr><td>Subscribe_without_validation</td><td>1</td><td>13.349 us</td><td>0.3105 us</td><td>0.9155 us</td><td>13.252 us</td><td>2.58</td><td>0.22</td><td>2.1057</td><td>-</td><td>-</td><td>8.58 KB</td>
+</tr><tr><td>Mutation_with_defaults</td><td>1</td><td>21.504 us</td><td>0.4605 us</td><td>1.3359 us</td><td>21.429 us</td><td>4.15</td><td>0.41</td><td>4.9133</td><td>-</td><td>-</td><td>20.11 KB</td>
+</tr><tr><td>Query_with_defaults</td><td>1</td><td>23.582 us</td><td>0.2700 us</td><td>0.2525 us</td><td>23.606 us</td><td>4.08</td><td>0.16</td><td>5.0354</td><td>-</td><td>-</td><td>20.57 KB</td>
+</tr><tr><td>Subscribe_with_defaults</td><td>1</td><td>31.834 us</td><td>0.4917 us</td><td>0.4359 us</td><td>31.748 us</td><td>5.51</td><td>0.25</td><td>6.3477</td><td>-</td><td>-</td><td>25.92 KB</td>
+</tr><tr><td>Subscribe_with_defaults_and_get_value</td><td>1</td><td>32.444 us</td><td>0.3774 us</td><td>0.3346 us</td><td>32.455 us</td><td>5.61</td><td>0.23</td><td>6.3477</td><td>-</td><td>-</td><td>25.92 KB</td>
+</tr></tbody></table>
+</body>
+</html>

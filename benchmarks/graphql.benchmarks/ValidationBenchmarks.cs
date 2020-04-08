@@ -14,7 +14,7 @@ namespace Tanka.GraphQL.Benchmarks
 {
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     [MemoryDiagnoser]
-    [MarkdownExporterAttribute.GitHub]
+    [AsciiDocExporter]
     public class ValidationBenchmarks
     {
         private List<CombineRule> _comparisonRules;

@@ -1,4 +1,11 @@
-[!includexref:BenchmarkDotNet.Artifacts/results/Tanka.GraphQL.Benchmarks.Benchmarks-report-github.adoc[Benchmarks]]
+# Benchmarks
+
+\include::benchmarks:page$results/Tanka.GraphQL.Benchmarks.ExecutionBenchmarks-report.adoc[]
+
+[%header,format=csv,separator=;]
+|===
+include::benchmarks:example$results/Tanka.GraphQL.Benchmarks.ExecutionBenchmarks-report.csv[]
+|===
 
 ____
 DISCLAIMER Benchmarks are run as part of the build and as such are not comparable
